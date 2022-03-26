@@ -38,7 +38,17 @@ namespace Arreglos
                 throw new Exception("Arreglo Lleno");
             }
             array[final] = dato;
-            final++
+            final++;
+        }
+
+        public void Eliminar()
+        {
+            if (ValidaVacio())
+            {
+                throw new Exception("Arreglo Vacio");
+            }
+            array[principio] = null;
+            principio++;
         }
         
         
