@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Arreglos
 {
-    internal class Pilas
+    public class Pilas
     {
+        private string[] array;
+        private int max;
+        private int tope;
+
+        public Pilas(int tamano)
+        {
+           
+        }
     }
 }
