@@ -21,14 +21,20 @@ namespace Arreglos
 
         private bool ValidaVacio()
         {
-            if (tope < 1)
+            /*if (tope < 1)
             {
                 return true;
             }
             else
             {
                 return false;
-            }
+            }*/
+            return (tope < 1);
+        }
+
+        private bool ValidaLleno()
+        {
+            return (tope > max);
         }
 
     }
