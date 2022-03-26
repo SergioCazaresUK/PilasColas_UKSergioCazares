@@ -37,5 +37,16 @@ namespace Arreglos
             return (tope > max);
         }
 
+        public void Agregar(string dato)
+        {
+            if (ValidaLleno())
+            {
+                throw new Exception("Arreglo Lleno");
+            }
+
+            array[tope] = dato;
+            tope++;
+        }
+
     }
 }
