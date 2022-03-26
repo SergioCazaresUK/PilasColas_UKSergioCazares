@@ -60,5 +60,24 @@ namespace Arreglos
    
         }
 
+        public string imprimir()
+        {
+            string datos = "";
+            //string.Empty; Es para imprimir vacio
+            if (ValidaLleno())
+            {
+                return "Arreglo Vacio";
+            }
+            for(int i = 0; i < tope; i++)
+            {
+                if (i > 0)
+                {
+                    datos+="\n";
+                }
+                datos += $"[{i}] - {array[i]}";
+            }
+            return datos;
+        }
+
     }
 }
