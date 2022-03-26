@@ -48,5 +48,17 @@ namespace Arreglos
             tope++;
         }
 
+        public void Eliminar()
+        {
+            if (ValidaVacio())
+            {
+                throw new Exception("Arreglo Vacio");
+            }
+
+            tope--;
+            array[tope] = null;
+   
+        }
+
     }
 }
