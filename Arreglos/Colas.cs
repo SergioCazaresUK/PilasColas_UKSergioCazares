@@ -19,6 +19,27 @@ namespace Arreglos
             principio = 0;
             final = 0;
         }
+
+        private bool ValidaVacio()
+        {
+            return ((principio < 1 && final < 1) 
+                || principio == final); 
+        }
+
+        private bool ValidaLleno()
+        {
+            return (final > max);
+        }
+
+        public void Agregar(string dato)
+        {
+            if (ValidaLleno())
+            {
+                throw new Exception("Arreglo Lleno");
+            }
+            array[final] = dato;
+            final++
+        }
         
         
     }
