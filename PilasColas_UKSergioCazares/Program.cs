@@ -12,13 +12,15 @@ for (int i = 0; i < 10; i++)
 {
     try
     {
-
+        Console.WriteLine("--------------------------------");
+        pilas.Eliminar();
+        Console.WriteLine(pilas.imprimir());
     }
     catch (Exception ex) 
     {
 
         Console.WriteLine(ex.Message);
     }
-    Console.WriteLine("--------------------------------");
+    
 
 }
