@@ -50,6 +50,24 @@ namespace Arreglos
             array[principio] = null;
             principio++;
         }
+
+        public String imprimir()
+        {
+            string datos = string.Empty;
+            if (ValidaVacio())
+            {
+                return ("Arreglo vacio");
+            }
+            for(int i = principio; i < final; i++)
+            {
+                if (i > principio)
+                {
+                    datos += "\n";
+                }
+                datos += $"[{i}] - {array[i]}";
+            }
+            return datos;
+        }
         
         
     }
