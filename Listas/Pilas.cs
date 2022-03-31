@@ -13,5 +13,10 @@ namespace Listas
         {
             lista = new List<string>();
         }
+
+        public void Agregar(string dato)
+        {
+            lista.Add(dato);
+        }
     }
 }
