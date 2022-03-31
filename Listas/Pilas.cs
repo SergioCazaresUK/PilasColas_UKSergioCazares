@@ -18,5 +18,10 @@ namespace Listas
         {
             lista.Add(dato);
         }
+
+        private bool ValidaVacio()
+        {
+            return (lista.Count == 0);
+        }
     }
 }
