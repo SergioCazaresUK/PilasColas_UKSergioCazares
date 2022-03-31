@@ -9,7 +9,7 @@ namespace Listas
     public class Pilas
     {
         private List<string> lista;
-        public Pilas()
+        public Pilas(int v)
         {
             lista = new List<string>();
         }
