@@ -33,6 +33,25 @@ namespace Listas
             lista.RemoveAt(lista.Count - 1);
         }
 
+        public string Imprimir()
+        {
+            string datos = string.Empty;
 
+            if (ValidaVacio())
+            {
+                return "Lista Vacia";
+            }
+
+            int count = lista.Count;
+            for (int i = 0; i < count; i++)
+            {
+                if (i > 0)
+                {
+                    datos += "\n";
+                }
+                datos += $"[{i}] - {lista[i]}";
+            }
+            return datos;
+        }
     }
 }
