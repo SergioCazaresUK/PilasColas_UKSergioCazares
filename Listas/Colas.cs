@@ -23,5 +23,16 @@ namespace Listas
         {
             return (lista.Count == 0);
         }
+
+        public void Eliminar()
+        {
+            if (ValidaVacio())
+            {
+                throw new Exception("Lista Vacia");
+            }
+            lista.RemoveAt(0);
+        }
+
+
     }
 }
