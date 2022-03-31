@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Listas
 {
-    internal class Colas
+    public class Colas
     {
+        private List<string> lista;
+        public Colas()
+        {
+            lista = new List<string>();
+        }
     }
 }
