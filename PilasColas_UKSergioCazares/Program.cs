@@ -1,7 +1,7 @@
 ﻿using Arreglos;
 using Listas;
 
-Console.WriteLine("Arreglos Pilas");
+Console.WriteLine("-------Arreglos Pilas--------");
 Arreglos.Pilas pilas = new Arreglos.Pilas(10);
 pilas.Agregar("cero");
 pilas.Agregar("uno");
@@ -26,8 +26,9 @@ for (int i = 0; i < 10; i++)
     
 
 }
+Console.WriteLine("\n");
 
-Console.WriteLine("Arreglo Colas");
+Console.WriteLine("-------Arreglo Colas--------");
 Arreglos.Colas colas = new Arreglos.Colas(10);
 colas.Agregar("cero");
 colas.Agregar("uno");
@@ -52,8 +53,9 @@ for (int i = 0; i < 10; i++)
 
 
 }
+Console.WriteLine("\n");
 
-Console.WriteLine("Listas Pilas");
+Console.WriteLine("--------Listas Pilas---------");
 Listas.Pilas Lpilas = new Listas.Pilas(10);
 Lpilas.Agregar("cero");
 Lpilas.Agregar("uno");
@@ -78,8 +80,9 @@ for (int i = 0; i < 10; i++)
 
 
 }
+Console.WriteLine("\n");
 
-Console.WriteLine("Listas Colas");
+Console.WriteLine("--------Listas Colas----------");
 Listas.Colas LColas = new Listas.Colas(10);
 LColas.Agregar("cero");
 LColas.Agregar("uno");
